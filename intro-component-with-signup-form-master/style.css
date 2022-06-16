@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(./images/bg-intro-desktop.png);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.container > div {
+    flex: 1;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 50px;
+}
+
+p {
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 6px rgba(0, 0, 0 , 0.2);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.box p {
+    margin: 0;
+}
+
+.box-blue {
+    background-color: hsl(248, 32%, 49%);
+    padding: 20px;
+}
+
+.form-control {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.form-control small {
+    color: hsl(0, 100%, 74%);
+    position: absolute;
+    font-weight: 600;
+    bottom: -20px;
+    right: 0;
+    opacity: 0;
+    text-align: right;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 15px 25px;
+    font-weight: 600;
+    font-size: 14px;
+    border: 1.2px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+}
+
+input:focus {
+    border: 1.5px solid hsl(246, 32%, 49%);
+    outline: none;
+}
+
+button {
+    background-color: hsl(154, 59%, 51%);
+    display: block;
+    width: 100%;
+    color: white;
+    padding: 15px 25px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid hsl(154, 59%, 45%);
+    border-radius: 5px;
+    box-shadow:0 2px hsl(154, 59%, 51%) ;
+    letter-spacing: 1px;
+    transition: 0.4s ease;
+    text-transform: uppercase;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow:0 0 hsl(154, 59%, 51%);
+}
+
+small {
+    display: block;
+    color: #bbb;
+    font-size: 12px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+small a {
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        text-align: center;
+    }
+    
+    p {
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+    
+}
